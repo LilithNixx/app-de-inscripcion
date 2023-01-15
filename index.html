@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="estilo.css" type="text/css">
+    <title>app de inscripcion</title>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="form-container">
+            <h1>Estudiantes y Profesores</h1>
+            <div class="alert">
+                Por favor ingrese todos los datos
+            </div>
+            <form id="formulario">
+            
+                <input class="form" type="text" name="name" placeholder="Ingrese nombre" required>
+                <input class="form" type="number" name="age" placeholder="Ingrese edad" required>
+            
+                <select class="form-select" name="opcion">
+
+                    <option value="Estudiante" selected> Estudiante</option>
+                    <option value="Profesor">Profesor</option>
+
+                </select>
+
+                <button class="btn" type="submit">Agregar</button>
+
+            </form>
+        </div>
+        
+        <section>
+
+            <div class="cards" id="cardsEstudiantes"><!--templateEstudiante--></div>
+                
+            <div class="cards" id="cardsProfesores"><!--templateProfesor--></div>
+
+            <!--<div>Profesores</div>-->
+
+        </section>
+    </div>
+
+    <template id="templateEstudiante">
+        <article class="card">
+            <div class="card-body">
+                <h5>
+                    <span class="student-name name">Nombre</span>
+                    <span class="student-mark btn-Aprobar">Aprobado</span>
+                </h5>
+                <h6>Estudiante</h6>
+                <p><span class="age">edad</span> años</p>
+                <div class="btns">
+                    <button class="btn btn-Aprobar">Aprobar</button>
+                    <button class="btn btn-Reprobar">Reprobar</button>
+                </div> 
+            </div>
+        </article>
+    </template>
+    <template id="templateProfesor">
+        <article class="card cardProf">
+            <div class="card-body">
+                <h5 class="name">Nombre</h5>
+                <h6 class="prof">Profesor</h6>
+                <p><span class="profAge">edad</span>años</p>
+            </div>
+        </article>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>

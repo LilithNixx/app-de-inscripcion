@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 800px;
+    
+
+    margin: auto;
+    background: rgb(175, 157, 157);
+
+    display: flex;
+    flex-direction: column;
+}
+
+    /*Formulario*/
+
+.form-container {
+    margin: 30px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    background: rgb(233, 212, 185);
+}
+
+.form {
+    width: 600px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(175, 157, 157);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(56, 43, 43);
+}
+
+.form-select {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn {
+    margin: 10px;
+    padding: 7px 10px;
+    
+    border-radius: 4px;
+    border: none;
+    background: rgb(175, 157, 157);
+    color: antiquewhite;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.btn:hover {
+    border: 1px solid white;
+}
+
+    /*fin Formulario*/
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.card {
+    width: 300px;
+    height: 220px;
+
+    background: antiquewhite;
+
+    margin: 20px;
+    padding: 10px;
+}
+
+.cardProf {
+    height: 150px;
+}
+.card-body {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    color: rgb(82, 63, 63);
+}
+
+.name {
+    font-size: 18px; 
+    color:  rgb(190, 86, 86);
+}
+
+.student-mark {
+    border: 1px solid rgba(82, 63, 63, 0.534);
+    border-radius: 4px;
+    background: rgb(245, 237, 226);
+
+    padding: 3px 5px;
+}
+
+h6 {
+    margin: 1px 10px 1px 10px;
+    padding: 2px 40px;
+}
+
+p {
+    margin: 0 10px 1px 10px;
+    padding: 2px 40px;
+
+    font-size: 10px;
+}
+
+.btns {
+    margin: 20px 10px 0 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     background: rgb(175, 157, 157);
+}
+
+
+.btn-Aprobar {
+    background: rgb(132, 247, 117);
+}
+
+.btn-Reprobar {
+    background: rgb(240, 91, 91);
+}
+
+.name {
+    align-self: flex-start;
+}
+
+.prof {
+    align-self: flex-start;
+    padding-left: 0;
+}
+
+.profAge {
+    align-self: flex-start;
+    padding-left: 0;
+}
+
+
+
+
